@@ -1,5 +1,5 @@
-import { gql } from '@apollo/client';
-import { useFaustQuery } from '@faustwp/core';
+import { gql } from "@apollo/client";
+import { useFaustQuery } from "@faustwp/core";
 import {
   Container,
   ContentWrapper,
@@ -10,9 +10,9 @@ import {
   Main,
   NavigationMenu,
   SEO,
-} from '../components';
-import * as MENUS from '../constants/menus';
-import { BlogInfoFragment } from '../fragments/GeneralSettings';
+} from "../components";
+import * as MENUS from "../constants/menus";
+import { BlogInfoFragment } from "../fragments/GeneralSettings";
 
 const GET_LAYOUT_QUERY = gql`
   ${BlogInfoFragment}
