@@ -20,6 +20,7 @@ module.exports = withFaust({
 
 function atlas_cache_handler() {
   if (process.env.ATLAS_CACHE_HANDLER_ENABLED !== undefined) {
+    console.log('custom cache handler enabled')
     return {
       incrementalCacheHandlerPath: require.resolve('./.atlas/atlas-cache-handler.js'),
       isrMemoryCacheSize: 0
